@@ -14,3 +14,5 @@ jobs:
       - name: Fast CI
         run: |
           echo "Fast CI, Sleeping 60s"
+          sleep 60
+          echo "Fast CI, DONE"
