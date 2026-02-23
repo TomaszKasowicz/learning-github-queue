@@ -1,0 +1,16 @@
+name: Fast CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches: main
+
+jobs:
+  ci:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Fast CI
+        run: |
+          echo "Fast CI, Sleeping 60s"
