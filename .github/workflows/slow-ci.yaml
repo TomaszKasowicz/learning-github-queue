@@ -1,0 +1,15 @@
+name: Slow CI
+
+on:
+  merge_group:
+    types: [checks_requested]
+
+jobs:
+  ci:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Slow CI
+        run: |
+          echo "Slow CI, Sleeping 120s"
+          sleep 120
+          echo "Slow CI, DONE"
