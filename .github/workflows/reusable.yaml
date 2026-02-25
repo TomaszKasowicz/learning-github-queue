@@ -15,4 +15,4 @@ jobs:
     steps:
       - run: |
           echo "Print env vars"
-          prinenv | sort | uniq
+          printenv | sort | uniq
