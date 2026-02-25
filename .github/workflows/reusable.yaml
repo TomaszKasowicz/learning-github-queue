@@ -1,0 +1,18 @@
+on:
+  workflow_call:
+    inputs:
+      dry-run:
+        description: Dry Run
+        required: true
+        type: boolean
+
+env:
+  DRY_RUN: ${{ inputs.dry-run }}
+
+jobs:
+  reusable:
+    runs-on: ubuntu-slim
+    steps:
+      - run: |
+          echo "Print env vars"
+          prinenv | sort | uniq
