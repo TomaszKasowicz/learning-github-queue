@@ -10,6 +10,6 @@ jobs:
           echo "Hello from main job"
 
   reusable:
-    uses: ./.github/worfklows/reusable.yaml
+    uses: .github/workflows/reusable.yaml
     with:
       dry-run: true
