@@ -1,0 +1,15 @@
+on:
+  workflow_dispatch:
+
+
+jobs:
+  main:
+    runs-on: ubuntu-slim
+    steps:
+      - run: |
+          echo "Hello from main job"
+
+  reusable:
+    uses: .github/worfklows/reusable.yaml
+    with:
+      dry-run: true
